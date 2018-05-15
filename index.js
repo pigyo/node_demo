@@ -30,9 +30,6 @@ app.get('/home/*',(req, res) => {
     res.send('hello world123');
 })
 
-
-
-
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log('start listen http://localhost:3000/');
 });
